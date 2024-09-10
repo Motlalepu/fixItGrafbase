@@ -1,0 +1,10 @@
+type Profile {
+  address: String!
+}
+
+type User @model {
+  name: String!
+  age: Int
+  profile: Profile
+  parent: User
+}
